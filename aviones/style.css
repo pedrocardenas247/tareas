@@ -1,0 +1,96 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    
+    body {
+        background: linear-gradient(to bottom, #4394f4 50%, #ffffff 50%);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .contenedor {
+        width: 960px;
+        height: 625px;
+        background-color: white;
+        position: relative;
+        margin: 50px auto 0 auto;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+    
+    .contenedor__col {
+        display: inline-block;
+        border-right: thin solid #e1f1ff;
+        margin-top: 25px;
+        padding: 0 50px;
+    }
+    
+    .contenedor__col:last-child {
+        border-right: none;
+    }
+    
+    .contenedor__tit h2 {
+        font-size: 16px;
+        color: #999999;
+        padding: 20px 0 50px 0;
+        border-bottom: thin solid #e1f1ff;
+    }
+    
+    .contenedor__sub h3 {
+        font-size: 12px;
+        color: #4394f4;
+        padding: 15px 0 15px 0;
+        border-bottom: thin solid #e1f1ff;
+    }
+    
+    .contenedor__price {
+        font-size: 30px;
+        font-weight: bold;
+        color: #016ff9;
+        padding-top: 20px;
+    }
+    
+    .contenedor__button {
+        width: 140px;
+        height: 50px;
+        background-color: white;
+        margin-top: 30px;
+        border-radius: 10px;
+        font-size: 16px;
+        color: #348efe;
+        border: 1px solid #348efe;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .contenedor__button:hover {
+        background-color: #cde2fc;
+    }
+    
+    .contenedor__button2 {
+        width: 140px;
+        height: 50px;
+        background-color: #348efe;
+        margin-top: 30px;
+        border-radius: 10px;
+        font-size: 16px;
+        color: white;
+        border: 1px solid #348efe;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .contenedor__button2:hover {
+        background-color: white;
+        color: #348efe;
+    }
