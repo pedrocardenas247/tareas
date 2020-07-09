@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;531;600;700;800;900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+:root {
+    --principal: hsl(180, 29%, 50%);
+    --background: hsl(180, 52%, 96%);
+    --plomo-tablas: hsl(180, 31%, 95%);
+    --celeste-claro: hsl(180, 31%, 95%);
+    --gris: hsl(180, 8%, 52%);
+    --verde-oscuro: hsl(180, 14%, 20%);
+}
+
+body {
+    background-color: var(--background);
+}
+
+
+/* inicio de estilos del header */
+
+.header {
+    width: 1440px;
+    height: 157px;
+    display: flex;
+    background-image: url(../images/bg-header-desktop.svg);
+    background-color: hsl(180, 29%, 50%);
+    background-position: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.header__filter {
+    width: 1110px;
+    height: 72px;
+    background-color: white;
+    position: relative;
+    transform: translate(0, 121px);
+    border-radius: 7px;
+    box-shadow: 1px 9px 15px 3px hsl(180, 29%, 50%, 0.2);
+    display: flex;
+    padding: 0 30px 0 30px;
+}
+
+.header__filter1 {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__tag {
+    background-color: var(--background);
+    padding: 5px 20px;
+    height: 32px;
+    border-radius: 5px 0 0 5px;
+    color: var(--principal);
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__remove {
+    height: 32px;
+    width: 32px;
+    background-color: var(--principal);
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__clear {}
+
+
+/* fin estilos del header */
+
+.container {
+    width: 1110px;
+    height: 1000px;
+    margin: 76px auto 0 auto;
+}
+
+
+/* inicio estilos de los cursos */
+
+.container__item {
+    height: 153px;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 1px 9px 15px 3px hsl(180, 29%, 50%, 0.2);
+    overflow: hidden;
+    padding: 35px 35px 35px 0;
+}
+
+.container__item:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.container__item:hover .container__verde {
+    opacity: 1;
+}
+
+.container__verde {
+    width: 6px;
+    background-color: var(--principal);
+    height: 153px;
+    margin-right: 40px;
+    opacity: 0;
+}
+
+.container__curso {
+    display: flex;
+    align-items: flex-start;
+}
+
+.container__logo {
+    margin-right: 30px;
+}
+
+.container__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__linea1 {
+    display: flex;
+    align-items: center;
+}
+
+.container__tag1 {
+    color: var(--principal);
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.container__new {
+    width: 50px;
+    height: 25px;
+    background-color: var(--principal);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    margin-right: 10px
+}
+
+.container__featured {
+    width: 80px;
+    height: 25px;
+    background-color: #2f3b39;
+    color: var(--background);
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+}
+
+.container__linea2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.container__linea3 {
+    font-weight: 500;
+    margin-top: 10px;
+    color: var(--gris);
+}
+
+.container__linea3 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__linea3 li:nth-child(1) {
+    list-style: none;
+}
+
+
+/* inicia estilos de tags */
+
+.container__tags {
+    display: flex;
+    margin-left: auto;
+}
+
+.container__tag {
+    height: 30px;
+    background-color: #eef7f6;
+    padding: 10px;
+    margin: 7px;
+    color: hsl(180, 29%, 50%);
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
