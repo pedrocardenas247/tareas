@@ -34,6 +34,11 @@ body {
     justify-content: center;
 }
 
+.header:hover .header__filter {
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+
 .header__filter {
     width: 1110px;
     height: 72px;
@@ -44,6 +49,11 @@ body {
     box-shadow: 1px 9px 15px 3px hsl(180, 29%, 50%, 0.2);
     display: flex;
     padding: 0 30px 0 30px;
+    opacity: 0;
+}
+
+.header__filter:last-child .header__clear {
+    margin-left: auto;
 }
 
 .header__filter1 {
@@ -75,7 +85,21 @@ body {
     align-items: center;
 }
 
-.header__clear {}
+.header__remove:hover {
+    background-color: var(--verde-oscuro);
+    cursor: pointer;
+}
+
+.header__clear {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: calc(36px - 0.45rem);
+}
+
+.header__clear a {
+    color: var(--principal);
+    cursor: pointer;
+}
 
 
 /* fin estilos del header */
@@ -97,7 +121,6 @@ body {
     align-items: center;
     margin-bottom: 25px;
     box-shadow: 1px 9px 15px 3px hsl(180, 29%, 50%, 0.2);
-    overflow: hidden;
     padding: 35px 35px 35px 0;
 }
 
@@ -105,6 +128,7 @@ body {
     transform: scale(1.1);
     transition: all 0.2s ease;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .container__item:hover .container__verde {
@@ -212,4 +236,42 @@ body {
     font-size: 0.9rem;
     font-weight: bold;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        width: 480px;
+    }
+    .container {
+        width: 480px;
+        display: flex;
+        justify-content: center;
+        margin: 146px auto 0 auto;
+        flex-wrap: wrap;
+    }
+    .container__item {
+        height: 260px;
+        width: 408px;
+        flex-direction: column;
+    }
+    .container__logo {
+        position: relative;
+        transform: scale(0.7) translate(-60px, -120px);
+    }
+    .container__name {
+        position: relative;
+        transform: translate(-30px, -90px);
+    }
+    .header__filter {
+        width: 408px;
+        flex-wrap: wrap;
+        height: 130px;
+    }
+    .container__tags {
+        flex-wrap: wrap;
+    }
+    .container__curso {
+        display: flex;
+        flex-direction: column;
+    }
 }
