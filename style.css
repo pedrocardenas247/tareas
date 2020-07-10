@@ -27,9 +27,8 @@ header {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 1200px;
-    height: 150px;
     text-align: center;
-    margin: auto;
+    margin: 30px auto;
 }
 
 .grid__item {
@@ -61,6 +60,14 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    opacity: 0;
+}
+
+.grid__item:hover .grid__btn {
+    transform: scale(1);
+    transition: all 0.5s ease;
+    transform: translate(120px, -120px);
+    opacity: 1;
 }
 
 .grid__btn2 {
@@ -75,6 +82,14 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    opacity: 0;
+}
+
+.grid__item:hover .grid__btn2 {
+    transform: scale(1);
+    transition: all 0.5s ease;
+    transform: translate(120px, -120px);
+    opacity: 1;
 }
 
 .grid__item a {
@@ -86,6 +101,7 @@ header {
     display: flex;
     justify-content: flex-end;
     width: 1200px;
+    margin: auto;
 }
 
 .grupos__item1 {
