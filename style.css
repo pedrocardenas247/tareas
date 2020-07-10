@@ -12,8 +12,8 @@ body {
 }
 
 :root {
-    --grupo1: (#f01251);
-    --grupo2: (teal);
+    --grupo1: #f01251;
+    --grupo2: teal;
 }
 
 header {
@@ -39,15 +39,81 @@ header {
 .grid__item img {
     border: 5px solid white;
     border-radius: 10px;
+    box-shadow: 1px 2px 10px 5px rgba(99, 99, 99, 0.2);
+    width: 350px;
+    height: 210px;
+    position: relative;
+}
+
+.grid__item:hover img {
+    filter: invert(1090%);
+}
+
+.grid__btn {
+    position: relative;
+    transform: translate(120px, -120px);
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    background-color: var(--grupo1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.grid__btn2 {
+    position: relative;
+    transform: translate(120px, -120px);
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    background-color: var(--grupo2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.grid__item a {
+    outline: none;
+    text-decoration: none;
 }
 
 .grupos {
     display: flex;
+    justify-content: flex-end;
+    width: 1200px;
 }
 
-img {
-    width: 350px;
-    height: 210px;
+.grupos__item1 {
+    color: white;
+    background-color: #f01251;
+    width: 120px;
+    height: 40px;
+    margin-right: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.grupos__item2 {
+    color: white;
+    background-color: teal;
+    width: 120px;
+    height: 40px;
+    margin-right: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 .header__name {
