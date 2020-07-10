@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: bisque;
+    background-image: url(./brand.jpg);
+    background-size: 100%;
 }
 
 .grid-container {
@@ -25,4 +26,9 @@ body {
 img {
     width: 300px;
     height: 180px;
+}
+
+.name {
+    font-size: 2rem;
+    color: white;
 }
