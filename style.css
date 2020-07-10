@@ -24,11 +24,12 @@ header {
 }
 
 .grid__container {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
     width: 1200px;
     text-align: center;
     margin: 30px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .grid__item {
@@ -50,7 +51,7 @@ header {
 
 .grid__btn {
     position: relative;
-    transform: translate(120px, -120px);
+    transform: translate(100px, -120px);
     color: white;
     font-weight: bold;
     width: 150px;
@@ -66,13 +67,13 @@ header {
 .grid__item:hover .grid__btn {
     transform: scale(1);
     transition: all 0.5s ease;
-    transform: translate(120px, -120px);
+    transform: translate(100px, -120px);
     opacity: 1;
 }
 
 .grid__btn2 {
     position: relative;
-    transform: translate(120px, -120px);
+    transform: translate(100px, -120px);
     color: white;
     font-weight: bold;
     width: 150px;
@@ -88,7 +89,7 @@ header {
 .grid__item:hover .grid__btn2 {
     transform: scale(1);
     transition: all 0.5s ease;
-    transform: translate(120px, -120px);
+    transform: translate(100px, -120px);
     opacity: 1;
 }
 
@@ -135,4 +136,25 @@ header {
 .header__name {
     font-size: 2rem;
     color: white;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+    .header {
+        width: 480px;
+    }
+    .grid__container {
+        width: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grupos {
+        width: 480px;
+    }
 }
