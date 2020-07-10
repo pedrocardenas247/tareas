@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -9,7 +11,19 @@ body {
     background-size: 100%;
 }
 
-.grid-container {
+:root {
+    --grupo1: (#f01251);
+    --grupo2: (teal);
+}
+
+header {
+    background-color: black;
+    height: 50px;
+    padding: 0 40px;
+    font-weight: bold;
+}
+
+.grid__container {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 1200px;
@@ -18,17 +32,25 @@ body {
     margin: auto;
 }
 
-.grid-item {
-    display: inline-block;
-    padding: 20px;
+.grid__item {
+    margin-bottom: 30px;
+}
+
+.grid__item img {
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.grupos {
+    display: flex;
 }
 
 img {
-    width: 300px;
-    height: 180px;
+    width: 350px;
+    height: 210px;
 }
 
-.name {
+.header__name {
     font-size: 2rem;
     color: white;
 }
