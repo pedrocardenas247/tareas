@@ -8,7 +8,7 @@
 
 body {
     background-image: url(./brand.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 :root {
@@ -100,7 +100,7 @@ header {
 
 .grupos {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 1200px;
     margin: auto;
 }
@@ -141,9 +141,32 @@ header {
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 760px) {
+    body {
+        width: 760px;
+        background-size: cover;
+    }
+    .header {
+        width: 760px;
+    }
+    .grid__container {
+        width: 760px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grupos {
+        width: 768px;
+    }
+    .grid__item {
+        margin-right: 10px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     body {
         width: 480px;
+        background-size: cover;
     }
     .header {
         width: 480px;
@@ -153,6 +176,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
     .grupos {
         width: 480px;
