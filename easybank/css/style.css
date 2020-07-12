@@ -421,6 +421,9 @@
         .header__items ul {
             display: none;
         }
+        .hearder__items .header__btn {
+            display: none;
+        }
         /* EMPIEZA ESTILOS DEL MAIN */
         .main {
             background-position: -100px -250px;

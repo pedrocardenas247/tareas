@@ -27,13 +27,13 @@ header {
     display: flex;
     width: 1200px;
     text-align: center;
-    margin: 30px auto;
+    margin: 10px auto;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .grid__item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .grid__item img {
