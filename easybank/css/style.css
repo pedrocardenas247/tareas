@@ -139,33 +139,6 @@
         justify-content: center;
         align-items: center;
     }
-    
-    .header__items ul {
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .header__navegation {
-        height: 80px;
-        margin: 0 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--Grayish_Blue);
-    }
-    
-    .header__navegation a {
-        font-size: 0.8rem;
-        text-decoration: none;
-    }
-    
-    .header__navegation:hover {
-        height: 80px;
-        border-bottom: 5px solid hsl(136, 65%, 51%);
-        cursor: pointer;
-    }
     /* empieza estilos del main */
     
     .main {
@@ -239,6 +212,10 @@
         margin-top: 50px;
         display: flex;
         justify-content: space-between;
+    }
+    
+    .main__article1 img:hover {
+        filter: brightness(0.8);
     }
     
     .main__article1 article {
